@@ -21,7 +21,7 @@ ForEach-Object {
         department  = $user.Department
         company     = "Company Name"
         password    = "Password"
-        activated   = "false" #cant login
+        activated   = "false" #Can't Login
     }
 
     # Add to array
@@ -32,3 +32,4 @@ ForEach-Object {
 $usersList | Export-Csv -Path $outputPath -NoTypeInformation -Encoding UTF8
 
 Write-Host " Export complete! File saved to: $outputPath"
+
